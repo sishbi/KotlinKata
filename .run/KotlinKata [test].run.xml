@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="Kotlin [check]" type="GradleRunConfiguration" factoryName="Gradle">
+  <configuration default="false" name="KotlinKata [test]" type="GradleRunConfiguration" factoryName="Gradle">
     <ExternalSystemSettings>
       <option name="env">
         <map>
@@ -15,7 +15,8 @@
       </option>
       <option name="taskNames">
         <list>
-          <option value="check" />
+          <option value="clean" />
+          <option value="test" />
         </list>
       </option>
       <option name="vmOptions" />
