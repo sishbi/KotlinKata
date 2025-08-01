@@ -1,4 +1,4 @@
-# Gilded Rose starting position in Kotlin
+# Gilded Rose in Kotlin - Modified to add Feature Request
 
 ## Run the Text Fixture from Command-Line
 
