@@ -1,6 +1,6 @@
 package com.gildedrose
 
-import com.gildedrose.ItemType.CONJURED_MANA_CAKE
+import com.gildedrose.ext.ItemType.CONJURED_MANA_CAKE
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 

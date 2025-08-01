@@ -1,4 +1,4 @@
-package com.gildedrose
+package com.gildedrose.ext
 
 enum class ItemType(
     val itemName: String,

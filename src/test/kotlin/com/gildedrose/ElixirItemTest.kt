@@ -1,6 +1,6 @@
 package com.gildedrose
 
-import com.gildedrose.ItemType.ELIXIR_MONGOOSE
+import com.gildedrose.ext.ItemType.ELIXIR_MONGOOSE
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 

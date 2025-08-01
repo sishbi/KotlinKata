@@ -1,11 +1,13 @@
 package com.gildedrose
 
-import com.gildedrose.ItemType.AGED_BRIE
-import com.gildedrose.ItemType.BACKSTAGE_PASSES
-import com.gildedrose.ItemType.CONJURED_MANA_CAKE
-import com.gildedrose.ItemType.ELIXIR_MONGOOSE
-import com.gildedrose.ItemType.PLUS5_DEXTERITY_VEST
-import com.gildedrose.ItemType.SULFURAS_RAGNAROS
+import com.gildedrose.ext.ItemType
+import com.gildedrose.ext.ItemType.AGED_BRIE
+import com.gildedrose.ext.ItemType.BACKSTAGE_PASSES
+import com.gildedrose.ext.ItemType.CONJURED_MANA_CAKE
+import com.gildedrose.ext.ItemType.ELIXIR_MONGOOSE
+import com.gildedrose.ext.ItemType.PLUS5_DEXTERITY_VEST
+import com.gildedrose.ext.ItemType.SULFURAS_RAGNAROS
+import com.gildedrose.ext.copy
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test

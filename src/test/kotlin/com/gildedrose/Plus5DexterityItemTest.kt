@@ -1,6 +1,6 @@
 package com.gildedrose
 
-import com.gildedrose.ItemType.PLUS5_DEXTERITY_VEST
+import com.gildedrose.ext.ItemType.PLUS5_DEXTERITY_VEST
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 

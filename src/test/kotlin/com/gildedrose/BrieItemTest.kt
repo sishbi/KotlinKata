@@ -1,6 +1,6 @@
 package com.gildedrose
 
-import com.gildedrose.ItemType.AGED_BRIE
+import com.gildedrose.ext.ItemType.AGED_BRIE
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 

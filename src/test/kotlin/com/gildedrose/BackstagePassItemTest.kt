@@ -1,6 +1,6 @@
 package com.gildedrose
 
-import com.gildedrose.ItemType.BACKSTAGE_PASSES
+import com.gildedrose.ext.ItemType.BACKSTAGE_PASSES
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 
