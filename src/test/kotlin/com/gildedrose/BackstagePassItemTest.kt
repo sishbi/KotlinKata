@@ -10,8 +10,8 @@ class BackstagePassItemTest {
         val app = GildedRose(listOf(Item(BACKSTAGE_PASSES.itemName, 11, 0)))
         app.updateQuality()
 
-        assertEquals(10, app.items[0].sellIn)
-        assertEquals(1, app.items[0].quality)
+        assertEquals(10, app.items[0].sellIn, "sell-in")
+        assertEquals(1, app.items[0].quality, "quality")
     }
 
     @Test
@@ -19,8 +19,8 @@ class BackstagePassItemTest {
         val app = GildedRose(listOf(Item(BACKSTAGE_PASSES.itemName, 11, 10)))
         app.updateQuality()
 
-        assertEquals(10, app.items[0].sellIn)
-        assertEquals(11, app.items[0].quality)
+        assertEquals(10, app.items[0].sellIn, "sell-in")
+        assertEquals(11, app.items[0].quality, "quality")
     }
 
     @Test
@@ -28,8 +28,8 @@ class BackstagePassItemTest {
         val app = GildedRose(listOf(Item(BACKSTAGE_PASSES.itemName, 11, 50)))
         app.updateQuality()
 
-        assertEquals(10, app.items[0].sellIn)
-        assertEquals(50, app.items[0].quality)
+        assertEquals(10, app.items[0].sellIn, "sell-in")
+        assertEquals(50, app.items[0].quality, "quality")
     }
 
     @Test
@@ -37,8 +37,8 @@ class BackstagePassItemTest {
         val app = GildedRose(listOf(Item(BACKSTAGE_PASSES.itemName, 0, 50)))
         app.updateQuality()
 
-        assertEquals(-1, app.items[0].sellIn)
-        assertEquals(0, app.items[0].quality)
+        assertEquals(-1, app.items[0].sellIn, "sell-in")
+        assertEquals(0, app.items[0].quality, "quality")
     }
 
     @Test
@@ -46,8 +46,8 @@ class BackstagePassItemTest {
         val app = GildedRose(listOf(Item(BACKSTAGE_PASSES.itemName, 10, 0)))
         app.updateQuality()
 
-        assertEquals(9, app.items[0].sellIn)
-        assertEquals(2, app.items[0].quality)
+        assertEquals(9, app.items[0].sellIn, "sell-in")
+        assertEquals(2, app.items[0].quality, "quality")
     }
 
     @Test
@@ -55,8 +55,8 @@ class BackstagePassItemTest {
         val app = GildedRose(listOf(Item(BACKSTAGE_PASSES.itemName, 10, 49)))
         app.updateQuality()
 
-        assertEquals(9, app.items[0].sellIn)
-        assertEquals(50, app.items[0].quality)
+        assertEquals(9, app.items[0].sellIn, "sell-in")
+        assertEquals(50, app.items[0].quality, "quality")
     }
 
     @Test
@@ -64,8 +64,8 @@ class BackstagePassItemTest {
         val app = GildedRose(listOf(Item(BACKSTAGE_PASSES.itemName, 9, 49)))
         app.updateQuality()
 
-        assertEquals(8, app.items[0].sellIn)
-        assertEquals(50, app.items[0].quality)
+        assertEquals(8, app.items[0].sellIn, "sell-in")
+        assertEquals(50, app.items[0].quality, "quality")
     }
 
     @Test
@@ -73,8 +73,8 @@ class BackstagePassItemTest {
         val app = GildedRose(listOf(Item(BACKSTAGE_PASSES.itemName, -1, 49)))
         app.updateQuality()
 
-        assertEquals(-2, app.items[0].sellIn)
-        assertEquals(0, app.items[0].quality)
+        assertEquals(-2, app.items[0].sellIn, "sell-in")
+        assertEquals(0, app.items[0].quality, "quality")
     }
 
     @Test
@@ -82,8 +82,8 @@ class BackstagePassItemTest {
         val app = GildedRose(listOf(Item(BACKSTAGE_PASSES.itemName, 5, 0)))
         app.updateQuality()
 
-        assertEquals(4, app.items[0].sellIn)
-        assertEquals(3, app.items[0].quality)
+        assertEquals(4, app.items[0].sellIn, "sell-in")
+        assertEquals(3, app.items[0].quality, "quality")
     }
 
     @Test
@@ -91,8 +91,8 @@ class BackstagePassItemTest {
         val app = GildedRose(listOf(Item(BACKSTAGE_PASSES.itemName, 5, 48)))
         app.updateQuality()
 
-        assertEquals(4, app.items[0].sellIn)
-        assertEquals(50, app.items[0].quality)
+        assertEquals(4, app.items[0].sellIn, "sell-in")
+        assertEquals(50, app.items[0].quality, "quality")
     }
 
     @Test
@@ -100,7 +100,7 @@ class BackstagePassItemTest {
         val app = GildedRose(listOf(Item(BACKSTAGE_PASSES.itemName, 4, 48)))
         app.updateQuality()
 
-        assertEquals(3, app.items[0].sellIn)
-        assertEquals(50, app.items[0].quality)
+        assertEquals(3, app.items[0].sellIn, "sell-in")
+        assertEquals(50, app.items[0].quality, "quality")
     }
 }

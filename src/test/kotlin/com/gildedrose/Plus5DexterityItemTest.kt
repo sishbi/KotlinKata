@@ -10,8 +10,8 @@ class Plus5DexterityItemTest {
         val app = GildedRose(listOf(Item(PLUS5_DEXTERITY_VEST.itemName, 2, 2)))
         app.updateQuality()
 
-        assertEquals(1, app.items[0].sellIn)
-        assertEquals(1, app.items[0].quality)
+        assertEquals(1, app.items[0].sellIn, "sell-in")
+        assertEquals(1, app.items[0].quality, "quality")
     }
 
     @Test
@@ -19,8 +19,8 @@ class Plus5DexterityItemTest {
         val app = GildedRose(listOf(Item(PLUS5_DEXTERITY_VEST.itemName, 2, 0)))
         app.updateQuality()
 
-        assertEquals(1, app.items[0].sellIn)
-        assertEquals(0, app.items[0].quality)
+        assertEquals(1, app.items[0].sellIn, "sell-in")
+        assertEquals(0, app.items[0].quality, "quality")
     }
 
     @Test
@@ -28,8 +28,8 @@ class Plus5DexterityItemTest {
         val app = GildedRose(listOf(Item(PLUS5_DEXTERITY_VEST.itemName, 0, 3)))
         app.updateQuality()
 
-        assertEquals(-1, app.items[0].sellIn)
-        assertEquals(1, app.items[0].quality)
+        assertEquals(-1, app.items[0].sellIn, "sell-in")
+        assertEquals(1, app.items[0].quality, "quality")
     }
 
     @Test
@@ -37,8 +37,8 @@ class Plus5DexterityItemTest {
         val app = GildedRose(listOf(Item(PLUS5_DEXTERITY_VEST.itemName, -1, 3)))
         app.updateQuality()
 
-        assertEquals(-2, app.items[0].sellIn)
-        assertEquals(1, app.items[0].quality)
+        assertEquals(-2, app.items[0].sellIn, "sell-in")
+        assertEquals(1, app.items[0].quality, "quality")
     }
 
     @Test
@@ -46,8 +46,8 @@ class Plus5DexterityItemTest {
         val app = GildedRose(listOf(Item(PLUS5_DEXTERITY_VEST.itemName, -1, 1)))
         app.updateQuality()
 
-        assertEquals(-2, app.items[0].sellIn)
-        assertEquals(0, app.items[0].quality)
+        assertEquals(-2, app.items[0].sellIn, "sell-in")
+        assertEquals(0, app.items[0].quality, "quality")
     }
 
     @Test
@@ -55,7 +55,7 @@ class Plus5DexterityItemTest {
         val app = GildedRose(listOf(Item(PLUS5_DEXTERITY_VEST.itemName, -2, 0)))
         app.updateQuality()
 
-        assertEquals(-3, app.items[0].sellIn)
-        assertEquals(0, app.items[0].quality)
+        assertEquals(-3, app.items[0].sellIn, "sell-in")
+        assertEquals(0, app.items[0].quality, "quality")
     }
 }

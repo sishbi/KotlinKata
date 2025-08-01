@@ -10,8 +10,8 @@ class BrieItemTest {
         val app = GildedRose(listOf(Item(AGED_BRIE.itemName, 2, 0)))
         app.updateQuality()
 
-        assertEquals(1, app.items[0].sellIn)
-        assertEquals(1, app.items[0].quality)
+        assertEquals(1, app.items[0].sellIn, "sell-in")
+        assertEquals(1, app.items[0].quality, "quality")
     }
 
     @Test
@@ -19,8 +19,8 @@ class BrieItemTest {
         val app = GildedRose(listOf(Item(AGED_BRIE.itemName, 2, 50)))
         app.updateQuality()
 
-        assertEquals(1, app.items[0].sellIn)
-        assertEquals(50, app.items[0].quality)
+        assertEquals(1, app.items[0].sellIn, "sell-in")
+        assertEquals(50, app.items[0].quality, "quality")
     }
 
     @Test
@@ -28,8 +28,8 @@ class BrieItemTest {
         val app = GildedRose(listOf(Item(AGED_BRIE.itemName, 0, 0)))
         app.updateQuality()
 
-        assertEquals(-1, app.items[0].sellIn)
-        assertEquals(2, app.items[0].quality)
+        assertEquals(-1, app.items[0].sellIn, "sell-in")
+        assertEquals(2, app.items[0].quality, "quality")
     }
 
     @Test
@@ -37,8 +37,8 @@ class BrieItemTest {
         val app = GildedRose(listOf(Item(AGED_BRIE.itemName, -1, 0)))
         app.updateQuality()
 
-        assertEquals(-2, app.items[0].sellIn)
-        assertEquals(2, app.items[0].quality)
+        assertEquals(-2, app.items[0].sellIn, "sell-in")
+        assertEquals(2, app.items[0].quality, "quality")
     }
 
     @Test
@@ -46,7 +46,7 @@ class BrieItemTest {
         val app = GildedRose(listOf(Item(AGED_BRIE.itemName, -1, 49)))
         app.updateQuality()
 
-        assertEquals(-2, app.items[0].sellIn)
-        assertEquals(50, app.items[0].quality)
+        assertEquals(-2, app.items[0].sellIn, "sell-in")
+        assertEquals(50, app.items[0].quality, "quality")
     }
 }

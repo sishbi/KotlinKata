@@ -10,8 +10,8 @@ class SulfurasItemTest {
         val app = GildedRose(listOf(Item(SULFURAS_RAGNAROS.itemName, 20, 8)))
         app.updateQuality()
 
-        assertEquals(20, app.items[0].sellIn)
-        assertEquals(8, app.items[0].quality)
+        assertEquals(20, app.items[0].sellIn, "sell-in")
+        assertEquals(8, app.items[0].quality, "quality")
     }
 
     @Test
@@ -19,8 +19,8 @@ class SulfurasItemTest {
         val app = GildedRose(listOf(Item(SULFURAS_RAGNAROS.itemName, 2, 80)))
         app.updateQuality()
 
-        assertEquals(2, app.items[0].sellIn)
-        assertEquals(80, app.items[0].quality)
+        assertEquals(2, app.items[0].sellIn, "sell-in")
+        assertEquals(80, app.items[0].quality, "quality")
     }
 
     @Test
@@ -28,8 +28,8 @@ class SulfurasItemTest {
         val app = GildedRose(listOf(Item(SULFURAS_RAGNAROS.itemName, -1, 1)))
         app.updateQuality()
 
-        assertEquals(-1, app.items[0].sellIn)
-        assertEquals(1, app.items[0].quality)
+        assertEquals(-1, app.items[0].sellIn, "sell-in")
+        assertEquals(1, app.items[0].quality, "quality")
     }
 
     @Test
@@ -37,8 +37,8 @@ class SulfurasItemTest {
         val app = GildedRose(listOf(Item(SULFURAS_RAGNAROS.itemName, -1, 0)))
         app.updateQuality()
 
-        assertEquals(-1, app.items[0].sellIn)
-        assertEquals(0, app.items[0].quality)
+        assertEquals(-1, app.items[0].sellIn, "sell-in")
+        assertEquals(0, app.items[0].quality, "quality")
     }
 
     @Test
@@ -46,7 +46,7 @@ class SulfurasItemTest {
         val app = GildedRose(listOf(Item(SULFURAS_RAGNAROS.itemName, -1, -1)))
         app.updateQuality()
 
-        assertEquals(-1, app.items[0].sellIn)
-        assertEquals(-1, app.items[0].quality)
+        assertEquals(-1, app.items[0].sellIn, "sell-in")
+        assertEquals(-1, app.items[0].quality, "quality")
     }
 }
