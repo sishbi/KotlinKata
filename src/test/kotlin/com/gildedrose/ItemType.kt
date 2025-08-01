@@ -1,6 +1,5 @@
 package com.gildedrose
 
-@Suppress("SpellCheckingInspection")
 enum class ItemType(
     val itemName: String,
 ) {

@@ -49,4 +49,13 @@ class Plus5DexterityItemTest {
         assertEquals(-2, app.items[0].sellIn)
         assertEquals(0, app.items[0].quality)
     }
+
+    @Test
+    fun `plus5 dexterity never less than zero`() {
+        val app = GildedRose(listOf(Item(PLUS5_DEXTERITY_VEST.itemName, -2, 0)))
+        app.updateQuality()
+
+        assertEquals(-3, app.items[0].sellIn)
+        assertEquals(0, app.items[0].quality)
+    }
 }

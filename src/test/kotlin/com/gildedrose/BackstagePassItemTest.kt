@@ -15,6 +15,15 @@ class BackstagePassItemTest {
     }
 
     @Test
+    fun `backstage pass increases by 1 from 10 each day, 11 days before concert`() {
+        val app = GildedRose(listOf(Item(BACKSTAGE_PASSES.itemName, 11, 10)))
+        app.updateQuality()
+
+        assertEquals(10, app.items[0].sellIn)
+        assertEquals(11, app.items[0].quality)
+    }
+
+    @Test
     fun `backstage pass increases by 1 each day, 11 days before concert, never more than 50`() {
         val app = GildedRose(listOf(Item(BACKSTAGE_PASSES.itemName, 11, 50)))
         app.updateQuality()
