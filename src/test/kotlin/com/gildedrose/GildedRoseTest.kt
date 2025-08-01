@@ -77,7 +77,7 @@ internal class GildedRoseTextTest {
         TestArg(5, BACKSTAGE_PASSES, 15, 14, 20, 21), // quality increases by 1 each day >= 10 before concert
         TestArg(6, BACKSTAGE_PASSES, 10, 9, 49, 50), // quality never more than 50
         TestArg(7, BACKSTAGE_PASSES, 5, 4, 49, 50), // quality never more than 50
-        TestArg(8, CONJURED_MANA_CAKE, 3, 2, 6, 5), // quality decreases by 1 each day
+        TestArg(8, CONJURED_MANA_CAKE, 3, 2, 6, 4), // quality decreases by 2 each day
     )
 
     @ParameterizedTest
@@ -96,7 +96,7 @@ internal class GildedRoseTextTest {
         TestArg(5, BACKSTAGE_PASSES, 15, 13, 20, 22), // quality increases by 1 each day >= 10 before concert
         TestArg(6, BACKSTAGE_PASSES, 10, 8, 49, 50), // quality never more than 50
         TestArg(7, BACKSTAGE_PASSES, 5, 3, 49, 50), // quality never more than 50
-        TestArg(8, CONJURED_MANA_CAKE, 3, 1, 6, 4), // quality decreases by 1 each day
+        TestArg(8, CONJURED_MANA_CAKE, 3, 1, 6, 2), // quality decreases by 2 each day
     )
 
     @ParameterizedTest
@@ -115,7 +115,7 @@ internal class GildedRoseTextTest {
         TestArg(5, BACKSTAGE_PASSES, 15, 12, 20, 23), // quality increases by 1 each day >= 10 before concert
         TestArg(6, BACKSTAGE_PASSES, 10, 7, 49, 50), // quality never more than 50
         TestArg(7, BACKSTAGE_PASSES, 5, 2, 49, 50), // quality never more than 50
-        TestArg(8, CONJURED_MANA_CAKE, 3, 0, 6, 3), // quality decreases by 1 each day
+        TestArg(8, CONJURED_MANA_CAKE, 3, 0, 6, 0), // quality decreases by 2 each day
     )
 
     @ParameterizedTest
@@ -134,7 +134,7 @@ internal class GildedRoseTextTest {
         TestArg(5, BACKSTAGE_PASSES, 15, 11, 20, 24), // quality increases by 1 each day >= 10 before concert
         TestArg(6, BACKSTAGE_PASSES, 10, 6, 49, 50), // quality never more than 50
         TestArg(7, BACKSTAGE_PASSES, 5, 1, 49, 50), // quality never more than 50
-        TestArg(8, CONJURED_MANA_CAKE, 3, -1, 6, 1), // quality decreases by 1 each day
+        TestArg(8, CONJURED_MANA_CAKE, 3, -1, 6, 0), // quality never below zero
     )
 
     @ParameterizedTest
