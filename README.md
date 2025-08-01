@@ -1,4 +1,4 @@
-# Gilded Rose starting position in Kotlin
+# Gilded Rose in Kotlin - Major Refactor
 
 ## Run the Text Fixture from Command-Line
 
